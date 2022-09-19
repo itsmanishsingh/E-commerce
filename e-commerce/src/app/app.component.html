@@ -1,0 +1,213 @@
+<!-- logo bar -->
+<div class="logobar flex-column md:flex md:h-24 ">
+  <div class="logo-1 md:bg-bglogo">
+    <div class="container-1 bg-bglogo flex text-white md:mr-2 md:h-24">
+      <img src="../assets/Logo.png" alt="" class="ml-5 py-2 md:bg-bglogo">
+      <h1 class="font-bold bg-bglogo text-2xl ml-5 mt-2 md:pr-12 md:mt-8 md:h-24 md:pt-15 md:mt-8">LOGO</h1>
+      <!-- <i class="fa fa-bars font-bold text-2xl ml-[55%] mt-2 md:hidden" aria-hidden="true"></i> -->
+      <i class="fa fa-bars font-bold text-2xl ml-[55%] mt-2 md:hidden" aria-hidden="true" (click)="Pop()"></i>
+    </div>
+  </div>
+  <div class="dashboard lg:w-full">
+    <p
+      class="text-2xl pt-10 text-center md:bg-cover text-white bg-[url('../assets/Banner_Tab.png')] lg:bg-[url('../assets/Banner_Desktop.png')] md:text-left md:h-24  md:ml-3">
+      Dashboard</p>
+  </div>
+</div>
+
+
+<!-- Heading 1 -->
+
+<div class="body flex">
+  <div class="nav-item bg-black hidden md:flex">
+    <ul class="text-white mt-10">
+      <li class="mt-5 ml-8 mr-8  font-bold text-white ">DASHBOARD</li>
+      <hr>
+      <li class="mt-5 ml-8 mr-8 text-slate-300">OUR SERVICES</li>
+      <hr>
+      <li class="mt-5 ml-8 mr-8 text-slate-300">PRODUCTS</li>
+      <hr>
+      <li class="mt-5 ml-8 mr-8 text-slate-300">NEWSLETTER</li>
+      <hr>
+      <li class="mt-5 ml-8 mr-8 text-slate-300">OFFERS</li>
+      <hr>
+      <li class="mt-5 ml-8 mr-8 text-slate-300">CONTACT US</li>
+      <hr>
+      <li class="mt-5 ml-8 mr-8 text-slate-300">LOG OUT</li>
+      <hr>
+    </ul>
+  </div>
+  <div class="nav-body">
+    <div class="heading bg-bgheadingbar md:flex">
+      <h1 class="text-2xl ml-[10%] mr-[10%] py-3 font-Arial Regular md:ml-10 md:mr-5">Heading 1 - Point of view</h1>
+      <div class="verticalLine hidden md:flex"></div>
+      <p class="ml-[10%] mr-[10%] md:mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at ducimus
+        autem, praesentium minima accusamus doloremque corporis quo quasi, aliquam nesciunt architecto ab. Itaque
+        excepturi non quod facilis adipisci....<i class="text-sky-500">Read More</i></p>
+    </div>
+
+    <div class="card flex flex-wrap justify-between text-black ml-5 mr-5">
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <!-- <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button> -->
+        <button style="margin: 50px; padding: 10px" type="button" class="btn btn-primary bg-[#568F90] rounded-full px-5" (click)="openPopup()">Read More
+        </button>
+        <div class="modal bg-bglogo pl-2" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">PRODUCT FAMILY</h4>
+                <p>Product Name</p>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium error quidem nihil ipsam voluptatum totam quae? Minima soluta aut earum, debitis eveniet minus fuga harum totam corrupti, accusantium eum?</p>
+              </div>
+              <div class="modal-footer py-2">
+                <button type="button" class="btn btn-danger bg-white px-3 rounded-full" (click)="closePopup()">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+        
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+
+      <div class="card-1 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:basis-1/4 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+      
+
+      
+      <!-- <div class="card-2 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+    
+      <div class="card-3 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+    
+      <div class="card-4 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+    
+      <div class="card-4 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+    
+      <div class="card-4 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:ml-5 md:mr-5 ">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+    
+      <div class="card-4 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div>
+    
+      <div class="card-4 py-4 border-sky-100 box-border rounded-lg ml-10 mr-24 md:ml-5 md:mr-5">
+        <p>PRODUCT FAMILY</p>
+        <h3 class="pt-4 font-medium text-xl">PRODUCT NAME</h3>
+        <hr>
+        <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus?</p>
+        <button class=" bg-[#568F90] rounded-full px-3">READ MORE</button>
+      </div> -->
+
+
+
+    </div>
+  </div>
+
+</div>
+
+<!-- footer -->
+<div class="footer bg-black h-24 text-white mr-0">
+  <p class="text-white align-right justify-right py-2">Need Help? <i class="text-cyan-500">Contact Us</i></p>
+  <p class="">Copyright @ 2021. All rights reserved.</p>
+</div>
